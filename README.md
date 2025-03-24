@@ -2,14 +2,14 @@
 
 This project explores clinical and genetic factors affecting overall survival in breast cancer patients using the METABRIC dataset. It applies preprocessing, statistical analysis, correlation exploration, and multiple linear regression models (including regularized and polynomial regression) to predict survival time in months.
 
-## 📂 Dataset
+##  Dataset
 
 - **Source**: [Kaggle - METABRIC: Breast Cancer Gene Expression Profiles](https://www.kaggle.com/datasets/raghadalharbi/breast-cancer-gene-expression-profiles-metabric)
 - **Files Used**:
   - `final_cleaned_METABRIC.csv`: Preprocessed version with selected relevant features.
   - `final_labeled_METABRIC.csv`: Encoded categorical variables for regression modeling.
 
-## 🧪 Methods
+##  Methods
 
 - Label encoding for categorical features (`type_of_breast_surgery`, `cancer_type_detailed`, `cellularity`)
 - Summary statistics and histograms for data exploration
@@ -25,7 +25,7 @@ This project explores clinical and genetic factors affecting overall survival in
   - R² Score
   - Training vs Validation Loss Visualization
 
-## 📈 Key Insights
+##  Analysis
 
 - Strongest negative correlations with survival time:
   - Nottingham Prognostic Index
@@ -33,25 +33,25 @@ This project explores clinical and genetic factors affecting overall survival in
 - Regularized models (especially Elastic Net with α=1.0) showed improved generalization over plain linear regression.
 - Polynomial regression captured more complexity but required stronger regularization to avoid overfitting.
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 - Python (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)
 - Jupyter Notebook
 
-## 📊 Results
+##  Results
 
 - Best Model: **Elastic Net Regression (α=1.0)**
 - Test MSE: ~5376
 - R² Score: ~0.11 (Model captures some variance but underfits; future improvements needed)
 
-## 🔄 Future Improvements
+##  Future Improvements
 
 - Feature selection (Lasso, PCA)
 - Ensemble models (e.g., Random Forest, XGBoost)
 - Neural networks for capturing non-linear patterns
 - Enhanced hyperparameter tuning and cross-validation
 
-## 🧠 Author
+##  Author
 
 **Sanyukta Chapagain**  
 M.S. in Bioinformatics  
